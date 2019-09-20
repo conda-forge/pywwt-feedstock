@@ -48,6 +48,8 @@ requirements:
 test:
   imports:
     - pywwt
+  requires:
+    - xorg-libx11  # needed for Tk import on Azure CI
 
 about:
   home: http://github.com/WorldWideTelescope/pywwt
