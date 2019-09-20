@@ -1,5 +1,5 @@
 {% set name = "pywwt" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8e7350aed1857a87a252f7c3d24885beb2b695b9d0b19aea710c9fca1af19a4e
+  sha256: 4dc6e04cfbe04c6a7fe8d34c7c8d653783e81bd13adfef01445d7ae448ba64d6
 
 build:
   noarch: python
@@ -23,30 +23,33 @@ requirements:
     - nodejs
 
   run:
-    - python
-    - numpy >=1.9
-    - matplotlib >=1.5
+    # Keep alphabetized!
     - astropy >=1.0
-    - requests
     - beautifulsoup4
-    - python-dateutil
-    - lxml
-    - ipywidgets >=7.0
-    - ipyevents
-    - traitlets
-    - pyqt
-    - qtpy
     - flask
     - flask-cors
-    - six
-    - widgetsnbextension
+    - ipyevents
+    - ipywidgets >=7.0
     - jupyterlab
+    - lxml
+    - matplotlib >=1.5
     - notebook
+    - numpy >=1.9
+    - pyqt
+    - python
+    - python-dateutil
+    - qtpy
     - reproject >=0.4
+    - requests
+    - six
+    - traitlets
+    - widgetsnbextension
 
 test:
   imports:
     - pywwt
+  requires:
+    - xorg-libx11  # needed for Tk import on Azure CI
 
 about:
   home: http://github.com/WorldWideTelescope/pywwt
