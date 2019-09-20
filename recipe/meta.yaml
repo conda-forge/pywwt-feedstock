@@ -23,26 +23,27 @@ requirements:
     - nodejs
 
   run:
-    - python
-    - numpy >=1.9
-    - matplotlib >=1.5
+    # Keep alphabetized!
     - astropy >=1.0
-    - requests
     - beautifulsoup4
-    - python-dateutil
-    - lxml
-    - ipywidgets >=7.0
-    - ipyevents
-    - traitlets
-    - pyqt
-    - qtpy
     - flask
     - flask-cors
-    - six
-    - widgetsnbextension
+    - ipyevents
+    - ipywidgets >=7.0
     - jupyterlab
+    - lxml
+    - matplotlib >=1.5
     - notebook
+    - numpy >=1.9
+    - pyqt
+    - python
+    - python-dateutil
+    - qtpy
     - reproject >=0.4
+    - requests
+    - six
+    - traitlets
+    - widgetsnbextension
 
 test:
   imports:
