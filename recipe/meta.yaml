@@ -38,6 +38,7 @@ requirements:
     - pyqt
     - python
     - python-dateutil
+    - pytz
     - qtpy
     - reproject >=0.4
     - requests
