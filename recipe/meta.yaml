@@ -1,5 +1,5 @@
 {% set name = "pywwt" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4dc6e04cfbe04c6a7fe8d34c7c8d653783e81bd13adfef01445d7ae448ba64d6
+  sha256: 7d0b614e152863df4ac8eeac0114dc03a9013a25637d34ab7bce465ba2ca58a5
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
 
@@ -38,6 +38,7 @@ requirements:
     - pyqt
     - python
     - python-dateutil
+    - pytz
     - qtpy
     - reproject >=0.4
     - requests
@@ -53,8 +54,8 @@ test:
 
 about:
   home: http://github.com/WorldWideTelescope/pywwt
-  summary: WorldWideTelescope in Python
-  license: BSD 3-Clause
+  summary: AAS WorldWide Telescope in Python
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
 
