@@ -3,11 +3,11 @@ About pywwt
 
 Home: http://github.com/WorldWideTelescope/pywwt
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
-Summary: WorldWideTelescope in Python
+Summary: AAS WorldWide Telescope in Python
 
 
 
