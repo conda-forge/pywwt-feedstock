@@ -26,8 +26,6 @@ requirements:
     # Keep alphabetized!
     - astropy >=1.0
     - beautifulsoup4
-    - flask
-    - flask-cors
     - ipyevents
     - ipywidgets >=7.0
     - jupyterlab
@@ -42,7 +40,7 @@ requirements:
     - qtpy
     - reproject >=0.4
     - requests
-    - six
+    - tornado
     - traitlets
     - widgetsnbextension
 
