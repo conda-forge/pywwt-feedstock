@@ -34,7 +34,7 @@ requirements:
     - notebook
     - numpy >=1.9
     - pyqt
-    - python
+    - python >=3.7
     - python-dateutil
     - pytz
     - qtpy
