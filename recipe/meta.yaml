@@ -15,12 +15,13 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
+  build:
+    - nodejs =14  # prevent unnecessary matrixing here
 
   host:
     - python >=3.7
     - setuptools
     - pip
-    - nodejs
 
   run:
     # Keep alphabetized!
@@ -38,7 +39,7 @@ requirements:
     - python-dateutil
     - pytz
     - qtpy
-    - reproject >=0.4
+    - reproject >=0.8
     - requests
     - tornado
     - traitlets
