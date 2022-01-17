@@ -16,7 +16,7 @@ build:
 
 requirements:
   build:
-    - nodejs =14  # prevent unnecessary matrixing here
+    - nodejs =17  # prevent unnecessary matrixing here
 
   host:
     - python >=3.7
@@ -31,7 +31,7 @@ requirements:
     - ipywidgets >=7.0
     - jupyterlab
     - lxml
-    - matplotlib >=1.5
+    - matplotlib-base >=3
     - notebook
     - numpy >=1.9
     - pyqt
@@ -41,9 +41,12 @@ requirements:
     - qtpy
     - reproject >=0.8
     - requests
+    - toasty >=0.15
     - tornado
     - traitlets
     - widgetsnbextension
+    - wwt_data_formats >=0.12
+    - wwt_kernel_data_relay >=0.2
 
 test:
   imports:
