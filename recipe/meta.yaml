@@ -1,5 +1,5 @@
 {% set name = "pywwt" %}
-{% set version = "0.14.0" %}
+{% set version = "0.15.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5eb1b2b673e7efd69ff6b0d1b474850c86fcad02fcec1a28cab9d11f1a25ece2
+  sha256: dcc5f44976228a87484b8dfe3e343bbd599045b59f744280697e67b9cf998bc2
 
 build:
   noarch: python
@@ -16,7 +16,7 @@ build:
 
 requirements:
   build:
-    - nodejs =14  # prevent unnecessary matrixing here
+    - nodejs =17  # prevent unnecessary matrixing here
 
   host:
     - python >=3.7
@@ -31,7 +31,7 @@ requirements:
     - ipywidgets >=7.0
     - jupyterlab
     - lxml
-    - matplotlib >=1.5
+    - matplotlib-base >=3
     - notebook
     - numpy >=1.9
     - pyqt
@@ -41,9 +41,12 @@ requirements:
     - qtpy
     - reproject >=0.8
     - requests
+    - toasty >=0.15
     - tornado
     - traitlets
     - widgetsnbextension
+    - wwt_data_formats >=0.12
+    - wwt_kernel_data_relay >=0.2
 
 test:
   imports:
