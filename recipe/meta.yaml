@@ -1,5 +1,5 @@
 {% set name = "pywwt" %}
-{% set version = "0.18.0" %}
+{% set version = "0.18.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e973978dca586cba6bdcefeee8a17301c296ef6c5abf9f2e6dd8879900379c78
+  sha256: 296c46c515140e2585efb57539884c0b6c3a106a694b0b76ac194137728ed469
 
 build:
   noarch: python
