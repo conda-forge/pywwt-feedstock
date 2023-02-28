@@ -1,11 +1,11 @@
-About pywwt
-===========
+About pywwt-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pywwt-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/WorldWideTelescope/pywwt
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pywwt-feedstock/blob/main/LICENSE.txt)
 
 Summary: AAS WorldWide Telescope in Python
 
