@@ -52,11 +52,12 @@ test:
   imports:
     - pywwt
   requires:
+    - nbclassic
     - xorg-libx11  # needed for Tk import on Azure CI
 
 about:
   home: http://github.com/WorldWideTelescope/pywwt
-  summary: AAS WorldWide Telescope in Python
+  summary: WorldWide Telescope in Python
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
