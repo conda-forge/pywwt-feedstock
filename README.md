@@ -7,7 +7,7 @@ Home: http://github.com/WorldWideTelescope/pywwt
 
 Package license: BSD-3-Clause
 
-Summary: AAS WorldWide Telescope in Python
+Summary: WorldWide Telescope in Python
 
 Current build status
 ====================
