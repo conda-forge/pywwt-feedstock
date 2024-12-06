@@ -6,26 +6,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0c752630582835aad20a42402bdcf5f7fedf591b1b600a22eec205e6aba665c9
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
     - nodejs =17  # prevent unnecessary matrixing here
 
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools
     - pip
 
   run:
     # Keep alphabetized!
-    - astropy >=1.0
+    - astropy-base >=1.0
     - beautifulsoup4
     - ipyevents
     - ipywidgets >=7.0
@@ -35,7 +35,7 @@ requirements:
     - notebook
     - numpy >=1.9
     - pyqt
-    - python >=3.7
+    - python >={{ python_min }}
     - python-dateutil
     - pytz
     - qtpy
@@ -53,6 +53,7 @@ test:
     - pywwt
   requires:
     - nbclassic
+    - python {{ python_min }}
     - xorg-libx11  # needed for Tk import on Azure CI
 
 about:
