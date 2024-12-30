@@ -1,5 +1,5 @@
 {% set name = "pywwt" %}
-{% set version = "0.24.2" %}
+{% set version = "0.25.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0c752630582835aad20a42402bdcf5f7fedf591b1b600a22eec205e6aba665c9
+  sha256: 0065597b645cbf574cb802f413f45b41a3606a458f1c2becf20ff37f0330dcad
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
@@ -41,7 +41,7 @@ requirements:
     - qtpy
     - reproject >=0.8
     - requests
-    - toasty >=0.15
+    - toasty >=0.20
     - tornado
     - traitlets
     - widgetsnbextension
